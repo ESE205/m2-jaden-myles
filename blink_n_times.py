@@ -4,7 +4,7 @@ from time import sleep     # Import the sleep from time module
 GPIO.setwarnings(False)    # Ignore warning for now
 GPIO.setmode(GPIO.BOARD)   # Use physical pin numbering
 
-if sys.argv[1] is not None:
+if len( sys.argv)>1 :
    ITER_COUNT =int( sys.argv[1]) 
 else:
    ITER_COUNT = 5
